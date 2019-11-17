@@ -103,4 +103,43 @@ var getConcert = function (artist) {
         }
     });
 }
-runApp(process.argv[2], process.argv[3].trim());
+
+var doWhatItSays = function () {
+    //read more about nodeJS readFile
+    //https://nodejs.org/api/fs.html#fs_fs_readfile_path_options_callback
+    fs.readFile('random.txt', 'utf8', function (err, data) {
+        if (err) {
+            return console.log(err);
+            //console.log(data);
+        }
+
+        // if a comma exists, split data by the comma and put into an array
+        var dataArr = data.split(',');
+
+        var app = dataArr[0];
+
+        if (dataArr[1]) {
+            var param = dataArr[1];
+        }
+
+        switch (app) {
+            case "spotify-this-song":
+                spotifySong(param);
+                break;
+            case "movie-this":
+                getMovie(param);
+                break;
+            case "concert-this":
+                getConcert(param);
+                break;
+            case "do-what-it-says":
+                doWhatItSays();
+                break;
+            default:
+                console.log("Usage is spotify-this-song, movie-this, concert-this, or do-what-it-says");
+        }
+    });
+}
+
+
+runApp(process.argv[2], process.argv[3]);
