@@ -20,9 +20,13 @@ These must be installed to use LIRI.
 - [dotenv npm package](https://www.npmjs.com/package/dotenv)
 
 ## HOW TO USE LIRI:
+### DEMO: spotify-this function
 ![Screenshot of spotify function](spotifyThis.png)
+### DEMO: movie-this function
 ![Screenshot of getMovie function](movieThis.png)
+### DEMO: concert-this function
 ![Screenshot of getConcert function](concertThis.png)
+### DEMO: doWhatItSays function
 ![Screenshot of doWhatItSays function](doWhatItSays.png)
 
 
