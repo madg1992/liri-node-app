@@ -1,9 +1,31 @@
-# liri-node-app
+# LIRI App
+## Node console app to access APIs
+LIRI is like iPhone's SIRI. However, while SIRI is a _Speech Interpretation and Recognition Interface_, LIRI is a _Language Interpretation and Recognition Interface_. LIRI is a command line Node.JS app that takes in parameters and gives you back data from the APIs of [Spotify](https://developer.spotify.com/documentation/web-api/), [OMDb](https://www.omdbapi.com/), or [Bands In Town](https://artists.bandsintown.com/support/bandsintown-api).
 
-Clearly state the problem the app is trying to solve (i.e. what is it doing and why)
-Give a high-level overview of how the app is organized
-Give start-to-finish instructions on how to run the app
-Include screenshots, gifs or videos of the app functioning
-Contain a link to a deployed version of the app
-Clearly list the technologies used in the app
-State your role in the app development
+## Set Up and Installation
+In order for this app to work, you will need to use your own API key from [Spotify](https://developer.spotify.com). Once you have acquired our keys, copy and paste them into the proper locations in the '.env' file in this app.
+
+```
+# Spotify API keys
+
+SPOTIFY_ID=your-spotify-id
+SPOTIFY_SECRET=your-spotify-secret
+```
+### Other requirements
+
+These must be installed to use LIRI.
+
+- [Node.js](https://nodejs.org/en/)
+- [npm](https://www.npmjs.com/get-npm)
+- [dotenv npm package](https://www.npmjs.com/package/dotenv)
+
+## HOW TO USE LIRI:
+![Screenshot of spotify function](spotifyThis.png)
+![Screenshot of getMovie function](movieThis.png)
+![Screenshot of getConcert function](concertThis.png)
+![Screenshot of doWhatItSays function](doWhatItSays.png)
+
+
+
+
+
