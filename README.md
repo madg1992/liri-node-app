@@ -21,6 +21,12 @@ These must be installed to use LIRI.
 
 ## HOW TO USE LIRI:
 ### DEMO: spotify-this function
+The command line is: node liri.js spotify-this-song _songName_
+In our example below, we used the search query '_baby_'. The switch case statement that was created
+inside of the pickAppToRun function will determine which function to run based on the key statements 
+we pass through the terminal. The spotifySong function, when called, will search through Spotify's database for the 
+search query we pass through the terminal at process.argv[3]. A FOR LOOP was create so that it will print the top 20 
+results in the terminal. 
 ![Screenshot of spotify function](spotifyThis.png)
 ### DEMO: movie-this function
 ![Screenshot of getMovie function](movieThis.png)
