@@ -35,6 +35,7 @@ The OMDB Api was used in this function. An AJAX request was created to grab info
 ### DEMO: getConcert function
 The command line is: node liri.js concert-this _artist or band name_.
 The Bands In Town API was used in this function. An AJAX request was created to grab information about the the artist or band name from the Bands in Town database. The response from the request will print the results in the terminal.
+In our example, we passed in a command to search events for the band Incubus. As you can see from the terminal, the information about the venue name, location and event date was printed. Moment.js was used to format the data in this format: MM/DD/YYYY.
 ![Screenshot of getConcert function](concertThis.png)
 ### DEMO: doWhatItSays function
 This function is utilizes the node.JS readFile method to read whatever is inside of  the random.txt file. 
