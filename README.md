@@ -20,19 +20,25 @@ These must be installed to use LIRI.
 - [dotenv npm package](https://www.npmjs.com/package/dotenv)
 
 ## HOW TO USE LIRI:
-### DEMO: spotify-this function
-The command line is: node liri.js spotify-this-song _songName_
+### DEMO: spotifySong function
+The command line is: node liri.js spotify-this-song _songName_.
 In our example below, we used the search query '_baby_'. The switch case statement that was created
-inside of the pickAppToRun function will determine which function to run based on the key statements 
+inside of the pickAppToRun function will determine which function to run based on the search query 
 we pass through the terminal. The spotifySong function, when called, will search through Spotify's database for the 
 search query we pass through the terminal at process.argv[3]. A FOR LOOP was create so that it will print the top 20 
 results in the terminal. 
 ![Screenshot of spotify function](spotifyThis.png)
-### DEMO: movie-this function
+### DEMO: getMovie function
+The command line is: node liri.js movie-this _movieTitle_.
+The OMDB Api was used in this function. An AJAX request was created to grab information about the movie title from the OMDB database. The response from the request will print the results in the terminal.
 ![Screenshot of getMovie function](movieThis.png)
-### DEMO: concert-this function
+### DEMO: getConcert function
+The command line is: node liri.js concert-this _artist or band name_.
+The Bands In Town API was used in this function. An AJAX request was created to grab information about the the artist or band name from the Bands in Town database. The response from the request will print the results in the terminal.
 ![Screenshot of getConcert function](concertThis.png)
 ### DEMO: doWhatItSays function
+This function is utilizes the node.JS readFile method to read whatever is inside of  the random.txt file. 
+Inside of the random.txt file, we have "spotify-this-song,"I want it That Way". We pass a switch/case statement to help the function determine which function to run. In our example, the spotifySong function will run and return results with the keyword "I want it That Way"."
 ![Screenshot of doWhatItSays function](doWhatItSays.png)
 
 
