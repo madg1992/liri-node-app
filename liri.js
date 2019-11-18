@@ -142,4 +142,4 @@ var doWhatItSays = function () {
 }
 
 
-runApp(process.argv[2], process.argv[3]);
+runApp(process.argv[2], process.argv.slice(3).join(" "));
